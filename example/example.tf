@@ -1,4 +1,5 @@
-resource "azurerm_marketplace_agreement" "barracuda" {
+module "azurerm_marketplace_agreement" {
+  source    = "../"
   publisher = var.publisher
   offer     = var.offer
   plan      = var.plan
